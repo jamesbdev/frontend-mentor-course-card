@@ -7,13 +7,18 @@
 
 body {
     background-color: var(--background-color);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Figtree", sans-serif;
     display: flex;
     flex-direction: column;
+    font-weight: 500;
 }
 
 h2:hover {
     color: rgb(244, 208, 78);
+}
+
+h2, h3, .author-name {
+    font-weight: 800;
 }
 
 a {
@@ -36,13 +41,19 @@ footer {
 }
 
 .card {
-    width: 100%;
+    width: 80%;
     border: 1px solid black;
     box-shadow: 10px 10px 0 rgb(0, 0, 0);
     border-radius: 10px;
     padding: 1.5rem;
     background: white;
-    max-width: 350px;
+    max-width: 320px;
+   
+}
+
+.card .article-image {
+    width: 100%;
+
 }
 
 .tag {
@@ -58,12 +69,10 @@ footer {
     gap: 0.5rem;
 }
 
-.author-name {
-    font-weight: bold;
-}
 
 @media screen and (min-width: 768px) {
     .card {
         width: 50%;
+        max-width: 350px;
     }
 }
