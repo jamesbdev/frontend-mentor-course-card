@@ -3,6 +3,8 @@
 /* make CSS variable for the background colour) */
 :root {
     --background-color: rgb(244, 208, 78);
+    --grey: hsl(0, 0%, 42%);
+    --dark-grey: hsl(0, 0%, 7%);
 }
 
 body {
@@ -11,10 +13,12 @@ body {
     display: flex;
     flex-direction: column;
     font-weight: 500;
+    color: var(--dark-grey);
 }
 
 h2:hover {
     color: rgb(244, 208, 78);
+    cursor: pointer;
 }
 
 h2, h3, .author-name {
@@ -25,6 +29,16 @@ a {
     color: black;
     text-decoration: none;
 }
+p {
+    color: var(--grey);
+    font-size: 16px;
+}
+
+.publication-date {
+    color: var(--dark-grey);
+    font-size: 14px;
+}
+
 footer {
     display: flex;
     justify-content: flex-end;
