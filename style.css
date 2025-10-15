@@ -4,7 +4,7 @@
     --background-color: rgb(244, 208, 78);
     --grey: hsl(0, 0%, 42%);
     --dark-grey: hsl(0, 0%, 7%);
-    --vertical-spacing: 0.9rem;
+    --vertical-spacing: 0.7rem;
     --font-weight-normal: 500;
     --font-weight-bold: 800;
     --card-width-desktop: 370px;
@@ -52,7 +52,7 @@ p {
 
 .publication-date {
     color: var(--dark-grey);
-    font-size: 14px;
+    font-size: var(--font-size-medium);
 }
 
 footer {
@@ -103,6 +103,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-size: var(--font-size-medium);
 }
 
 p, h1, h2 {
